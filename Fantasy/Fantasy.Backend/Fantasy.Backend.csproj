@@ -22,4 +22,10 @@
     <ProjectReference Include="..\Fantasy.Shared\Fantasy.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Data\Countries.sql">
+      <CopyToOutputDirectory>Copy if never</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

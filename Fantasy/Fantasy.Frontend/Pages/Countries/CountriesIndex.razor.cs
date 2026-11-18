@@ -63,8 +63,8 @@ namespace Fantasy.Frontend.Pages.Countries
                 }
                 else
                 {
-                    var mensageError = await responseHttp.GetErrorMessageAsync();
-                    await SweetAlertService.FireAsync(Localizer["Error"], mensageError, SweetAlertIcon.Error);
+                    var messageError = await responseHttp.GetErrorMessageAsync();
+                    await SweetAlertService.FireAsync(Localizer["Error"], Localizer[messageError!], SweetAlertIcon.Error);
                 }
                 return;
             }
